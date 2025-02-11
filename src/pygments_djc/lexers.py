@@ -1,9 +1,11 @@
+from typing import List, Tuple
+
 from pygments.lexer import Lexer, bygroups, using
 from pygments.lexers.css import CssLexer
 from pygments.lexers.javascript import JavascriptLexer
 from pygments.lexers.python import PythonLexer
 from pygments.lexers.templates import HtmlDjangoLexer
-from pygments.token import Name, Text, Operator, String, Punctuation
+from pygments.token import Name, Operator, Punctuation, String, Text
 
 
 # Since this Lexer will be used only in documentation, it's a naive implementation
@@ -32,7 +34,7 @@ from pygments.token import Name, Text, Operator, String, Punctuation
 # ```
 #
 # But our implementation still highlights the latter.
-def _gen_code_block_capture_rule(var_name: str, next_state: str) -> tuple[str, str, str]:
+def _gen_code_block_capture_rule(var_name: str, next_state: str) -> Tuple[str, str, str]:
     # In Pygments, capture rules are defined as a tuple of 3 elements:
     # - The pattern to capture
     # - The token to highlight
@@ -65,7 +67,7 @@ def _gen_code_block_capture_rule(var_name: str, next_state: str) -> tuple[str, s
 
 
 # This generates capture rules for when we are already inside the code block
-def _gen_code_block_rules(lexer: Lexer) -> list[tuple[str, str, str]]:
+def _gen_code_block_rules(lexer: Lexer) -> List[Tuple[str, str, str]]:
     return [
         # We're inside the code block and we came across a """ or ''',
         # so the code block ends.
