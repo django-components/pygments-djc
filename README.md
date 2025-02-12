@@ -33,7 +33,7 @@ class MyComponent(Component):
 
 The syntax highlight then looks like this:
 
-![Django Components Python Lexer Example](./assets/demo.png)
+![Django Components Python Lexer Example](https://github.com/django-components/pygments-djc/blob/main/assets/demo.png?raw=true)
 
 ## Release notes
 
