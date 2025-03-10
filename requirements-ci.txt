@@ -30,7 +30,7 @@ pygments==2.19.1
     # via -r requirements-ci.in
 pyproject-api==1.8.0
     # via tox
-tox==4.24.1
+tox==4.24.2
     # via
     #   -r requirements-ci.in
     #   tox-gh-actions
