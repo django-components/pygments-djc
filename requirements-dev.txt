@@ -18,6 +18,8 @@ colorama==0.4.6
     # via tox
 distlib==0.3.9
     # via virtualenv
+exceptiongroup==1.2.2
+    # via pytest
 filelock==3.16.1
     # via
     #   tox
@@ -75,10 +77,21 @@ pytest==8.3.4
     # via -r requirements-dev.in
 pyyaml==6.0.2
     # via pre-commit
-tox==4.24.1
+tomli==2.2.1
+    # via
+    #   black
+    #   flake8-pyproject
+    #   mypy
+    #   pyproject-api
+    #   pytest
+    #   tox
+tox==4.25.0
     # via -r requirements-dev.in
 typing-extensions==4.12.2
-    # via mypy
+    # via
+    #   black
+    #   mypy
+    #   tox
 virtualenv==20.29.2
     # via
     #   pre-commit

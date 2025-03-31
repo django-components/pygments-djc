@@ -30,11 +30,17 @@ pygments==2.19.1
     # via -r requirements-ci.in
 pyproject-api==1.8.0
     # via tox
-tox==4.24.1
+tomli==2.2.1
+    # via
+    #   pyproject-api
+    #   tox
+tox==4.25.0
     # via
     #   -r requirements-ci.in
     #   tox-gh-actions
 tox-gh-actions==3.2.0
     # via -r requirements-ci.in
+typing-extensions==4.13.0
+    # via tox
 virtualenv==20.29.2
     # via tox
