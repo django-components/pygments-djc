@@ -85,14 +85,14 @@ tomli==2.2.1
     #   pyproject-api
     #   pytest
     #   tox
-tox==4.25.0
+tox==4.27.0
     # via -r requirements-dev.in
 typing-extensions==4.12.2
     # via
     #   black
     #   mypy
     #   tox
-virtualenv==20.29.2
+virtualenv==20.31.2
     # via
     #   pre-commit
     #   tox
