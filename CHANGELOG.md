@@ -1,5 +1,17 @@
 # Release notes
 
+## v1.1.0
+
+_18 Nov 2026_
+
+### Breaking changes
+
+- `pygments-djc` now requires Python 3.11 or later. On Python 3.8, 3.9 or 3.10, `pip install pygments-djc` installs v1.0.1.
+
+### Feat
+
+- You can now use `pygments-djc` on Python 3.14.
+
 ## v1.0.0 - First release
 
 _11 Feb 2025_
